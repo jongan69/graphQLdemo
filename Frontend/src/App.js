@@ -5,11 +5,11 @@ import logo from './logo.svg';
 import './App.css';
 
 const client = new ApolloClient({
-  uri: "https://guided-burro-82.hasura.app/v1/graphql",
+  uri: "HASURA_GraphQL_API_URL ",
   cache: new InMemoryCache(),
   headers: {
       "content-type": "application/json",
-      "x-hasura-admin-secret": "HMRl64GqgvWwOr5AMCE5Z1IuldbXblYfmwWW71qVeo77I9ThuezwFaWRuhTWgIyN",
+      "x-hasura-admin-secret": "ADMIN_SECRET",
     },
 });
 
